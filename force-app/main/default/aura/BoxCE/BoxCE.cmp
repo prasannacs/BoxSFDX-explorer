@@ -1,0 +1,9 @@
+<aura:component controller="BoxJWTController" implements="force:hasSObjectName,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes">
+    <aura:attribute name="logoUrl" type="string" default="{!$Resource.FRBNYlogo}" />
+    <ltng:require 
+        styles="{!$Resource.explorer  + '/11/content_explorer.css'}"
+        scripts="{!$Resource.explorer + '/11/content_explorer.js'}" 
+        afterScriptsLoaded="{!c.doInit}"/>
+        <div aura:id="explorer-container"> </div>
+
+</aura:component>
